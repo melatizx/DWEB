@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background-color: black;
+    border-bottom: 1px solid #222;
+}
+
+.brand {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 101;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background-color: white;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.navlist {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 280px;
+    max-width: 85vw;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    background-color: #0d0d0d;
+    border-left: 1px solid #222;
+    border-bottom: 1px solid #222;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+    z-index: 99;
+}
+
+.navlist[data-open="true"] {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.navlist ul {
+    list-style: none;
+    margin: 0;
+    padding: 16px 0;
+}
+
+.navlist li {
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.navlist li:last-child {
+    border-bottom: none;
+}
+
+.navlist a {
+    display: block;
+    padding: 14px 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.navlist a:hover,
+.navlist a:focus-visible {
+    background-color: #1a1a1a;
+}
+
+main {
+    padding: 90px 10% 40px 10%;
+}
+
+main h1 {
+    margin-bottom: 30px;
+}
+
+p {
+    margin-bottom: 50px;
+    padding: 0 5% 0 5%;
+    text-indent: 30px;
+}
+
+footer {
+    padding: 20px 10% 40px 10%;
+    text-align: center;
+    border-top: 1px solid #222;
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#devops" class="brand"></a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false"
+            aria-controls="navmenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="navlist" id="navmenu" aria-label="Navegação principal" data-open="false">
+            <ul>
+                <li><a href="#devops">DevOps</a></li>
+                <li><a href="#o-ciclo">O ciclo DevOps</a></li>
+                <li><a href="#integracao">Integração e entrega contínuas</a></li>
+                <li><a href="#automacao">Automação e Infrastructure as Code</a></li>
+                <li><a href="#containers">Containers e orquestração</a></li>
+                <li><a href="#devsecops">DevSecOps e observabilidade</a></li>
+                <li><a href="#ferramentas">Principais ferramentas</a></li>
+                <li><a href="#beneficios">Benefícios do DevOps</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>DevOps</h1>
+
+        <article>
+            <section id="devops" aria-labelledby="devops-heading">
+                <h2 id="devops-heading">O que é DevOps</h2>
+                <p>DevOps é uma abordagem que une desenvolvimento de software e operações de infraestrutura,
+                    buscando tornar todo o processo de criação, entrega e manutenção de sistemas mais rápido,
+                    seguro e confiável. O conceito combina cultura, colaboração, processos e tecnologia, fazendo
+                    com que equipes de desenvolvimento, infraestrutura, segurança e qualidade trabalhem de forma
+                    integrada. Mais do que uma ferramenta ou metodologia, DevOps representa uma mudança na forma
+                    como as equipes desenvolvem e operam sistemas.
+                </p>
+            </section>
+
+            <section id="o-ciclo" aria-labelledby="ciclo-heading">
+                <h2 id="ciclo-heading">O ciclo DevOps</h2>
+                <p>O DevOps funciona como um ciclo contínuo que envolve etapas como planejamento, desenvolvimento,
+                    integração, testes, entrega, implantação, operação e monitoramento. Depois que uma aplicação é
+                    colocada em produção, seus resultados são monitorados e utilizados para gerar feedback para
+                    novas melhorias. Dessa forma, o desenvolvimento deixa de ser um processo que termina no momento
+                    do deploy e passa a funcionar como um ciclo constante de evolução.</p>
+            </section>
+
+            <section id="integracao" aria-labelledby="integracao-heading">
+                <h2 id="integracao-heading">Integração e entrega contínuas</h2>
+                <p>Entre as principais práticas do DevOps estão Continuous Integration (CI) e Continuous
+                    Delivery/Deployment (CD). A integração contínua permite que alterações de código sejam
+                    automaticamente compiladas e testadas assim que são enviadas para o repositório. Já a entrega
+                    e implantação contínuas automatizam o processo de disponibilização da aplicação nos ambientes
+                    de teste e produção. Isso reduz processos manuais e permite identificar problemas mais
+                    rapidamente.</p>
+            </section>
+
+            <section id="automacao" aria-labelledby="automacao-heading">
+                <h2 id="automacao-heading">Automação e Infrastructure as Code</h2>
+                <p>A automação é um dos principais fundamentos do DevOps. Tarefas repetitivas, como testes, criação
+                    de ambientes, configuração de servidores e implantação de aplicações, podem ser executadas
+                    automaticamente por pipelines. Com Infrastructure as Code (IaC), ferramentas como Terraform e
+                    Ansible permitem definir e administrar infraestrutura através de arquivos versionados, tornando
+                    ambientes mais padronizados, reproduzíveis e fáceis de controlar.</p>
+            </section>
+
+            <section id="containers" aria-labelledby="containers-heading">
+                <h2 id="containers-heading">Containers e orquestração</h2>
+                <p>Tecnologias de containers, como Docker, permitem empacotar uma aplicação junto com suas
+                    dependências, proporcionando maior consistência entre ambientes de desenvolvimento, testes e
+                    produção. Em ambientes maiores, plataformas como Kubernetes podem gerenciar milhares de
+                    containers, oferecendo recursos de escalabilidade, recuperação de falhas, distribuição de
+                    aplicações e atualizações controladas. Essas tecnologias são frequentemente utilizadas em
+                    arquiteturas modernas de entrega contínua.</p>
+            </section>
+
+            <section id="devsecops" aria-labelledby="devsecops-heading">
+                <h2 id="devsecops-heading">DevSecOps e observabilidade</h2>
+                <p>A segurança também faz parte do ciclo DevOps através do conceito de DevSecOps, que integra
+                    práticas de segurança desde as primeiras etapas do desenvolvimento. Análises de código,
+                    dependências, containers e infraestrutura podem ser executadas automaticamente nos pipelines.
+                    Após a implantação, ferramentas de observabilidade, como Prometheus, Grafana e OpenTelemetry,
+                    permitem acompanhar métricas, logs e traces para identificar falhas, analisar desempenho e
+                    compreender o comportamento dos sistemas.</p>
+            </section>
+
+            <section id="ferramentas" aria-labelledby="ferramentas-heading">
+                <h2 id="ferramentas-heading">Principais ferramentas</h2>
+                <p>O ecossistema DevOps possui diversas ferramentas, cada uma voltada para uma etapa do ciclo. Git
+                    e GitHub/GitLab são utilizados para controle de versão e colaboração; Jenkins, GitHub Actions e
+                    GitLab CI/CD para automação de pipelines; Docker e Kubernetes para containers e orquestração;
+                    Terraform e Ansible para infraestrutura e configuração; e Prometheus, Grafana e OpenTelemetry
+                    para monitoramento e observabilidade. A escolha das ferramentas depende das necessidades,
+                    arquitetura e ambiente de cada organização.</p>
+            </section>
+
+            <section id="beneficios" aria-labelledby="beneficios-heading">
+                <h2 id="beneficios-heading">Benefícios do DevOps</h2>
+                <p>A adoção de práticas DevOps pode proporcionar entregas mais rápidas, maior qualidade, redução de
+                    erros manuais, melhor colaboração entre equipes, maior segurança e recuperação mais rápida
+                    diante de falhas. O objetivo não é simplesmente realizar mais deploys, mas criar um processo
+                    confiável e mensurável para entregar mudanças continuamente. Em resumo, DevOps conecta pessoas,
+                    processos e tecnologias para transformar o ciclo de software em um fluxo contínuo de
+                    desenvolvimento, automação, entrega, monitoramento e melhoria.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>Leonardo Melati &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
