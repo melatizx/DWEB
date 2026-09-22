@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 15px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 0.85rem;
+    color: #cddcec;
+}
+
+/* Menu com flexbox */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #00509e;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    background-color: #003366;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+main h2 {
+    border-bottom: 2px solid #00509e;
+    padding-bottom: 8px;
+    color: #003366;
+}
+
+/* Grade de notícias usando CSS Grid */
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .imagem {
+    height: 120px;
+    background-color: #00509e;
+}
+
+.card .conteudo {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card .categoria {
+    font-size: 0.75rem;
+    color: #00509e;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    font-size: 1rem;
+    margin: 0 0 8px;
+}
+
+.card p {
+    font-size: 0.85rem;
+    color: #555;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.card .data {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #003366;
+    color: white;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 700px) {
+    .noticias {
+        grid-template-columns: 1fr;
+    }
+}
